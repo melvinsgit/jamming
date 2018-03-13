@@ -3,7 +3,7 @@ import './Playlist.css';
 
 import TrackList from '../TrackList/TrackList';
 
-class Playlist extends React.Component {
+class Playlist extends Component {
 
   constructor(props) {
     super(props);
