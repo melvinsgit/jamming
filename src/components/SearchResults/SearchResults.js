@@ -13,7 +13,8 @@ class SearchResults extends Component {
         <TrackList
           tracks={this.props.searchResults}
           onAdd={this.props.onAdd}
-          isRemoval={false} />
+          isRemoval={false}
+          displayPreview={true} />
       </div>
     );
   }

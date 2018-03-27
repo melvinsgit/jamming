@@ -26,7 +26,9 @@ class Playlist extends Component {
           onFocus ={e => e.target.value = ""} />
         <TrackList
           tracks={this.props.playlistTracks}
-          isRemoval={true} onRemove={this.props.onRemove}/>
+          isRemoval={true}
+          onRemove={this.props.onRemove}
+          displayPreview={false} />
         <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
       </div>
     );

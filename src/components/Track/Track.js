@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import Sound from 'react-sound';
 import './Track.css';
+
+import TrackPreview from '../TrackPreview/TrackPreview';
 
 class Track extends Component {
 
@@ -25,9 +28,16 @@ class Track extends Component {
     return <a className="Track-action" onClick={this.addTrack}>+</a>;
   }
 
+  renderPreview() {
+    if (this.props.displayPreview) {
+      return <TrackPreview href={this.props.track.preview_url} />
+    }
+  }
+
   render() {
     return(
       <div className="Track">
+        {this.renderPreview()}
         <div className="Track-information">
           <h3>{this.props.track.name}</h3>
           <p>{this.props.track.artist} | {this.props.track.album}</p>
