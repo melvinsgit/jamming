@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Sound from 'react-sound';
 import './Track.css';
 
 import TrackPreview from '../TrackPreview/TrackPreview';
